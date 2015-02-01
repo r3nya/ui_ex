@@ -21,11 +21,11 @@
 
     window.onload = function () {
 
-        var elems = document.querySelectorAll('#nav');
+        var elems = document.querySelectorAll('.nav');
 
         for (var i = 0; i < elems.length; i++) {
             elems[i].onclick = function (e) {
-                toggle(document.getElementById(e.path[0].className));
+                toggle(document.getElementById(e.path[0].classList[0]));
             }
         }
 
