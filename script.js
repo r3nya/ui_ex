@@ -1,7 +1,7 @@
 (function () {
 
     function toggle (el) {
-        isHidden(el) ? show(el) : hide(el)
+        isHidden(el) ? show(el) : hide(el);
     }
 
     function isHidden (el) {
@@ -26,7 +26,7 @@
         for (var i = 0; i < elems.length; i++) {
             elems[i].onclick = function (e) {
                 toggle(document.getElementById(e.path[0].classList[0]));
-            }
+            };
         }
 
         var searchBtn = document.getElementById('searchSubmit');
@@ -36,7 +36,7 @@
             if (searchInput.value.length === 0) {
                 alert('Field should not be empty!');
             }
-        }
-    }
+        };
+    };
 
 })();
