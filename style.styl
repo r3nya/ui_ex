@@ -1,0 +1,238 @@
+// Default colors
+light-grey = #E5E5E5
+lighter-grey = #535353
+dark-grey = #3F3F3F
+dark-blue = #0073A1
+lighter-blue = #76A1B2
+
+body
+  background #DBDBDB
+  font-family Verdana, Arial
+  font-size 12px
+  color lighter-grey
+
+strong
+  color #9E9E9E
+
+.dark-grey
+  color dark-grey
+
+.main
+  background white
+  width 960px
+  margin-left auto
+  margin-right auto
+
+.header
+  height 90px
+  background #216089
+  margin-bottom 20px
+
+  & #logo
+    float left
+
+  & #logo-ad
+    float left
+
+.left
+  float left
+  width 172px
+  margin-left 15px
+  margin-right 12px
+  color dark-grey
+
+  & .nav-bar
+    position relative
+    top -8px
+    height 3px
+    background url('../images/nav_bar.gif')
+
+.menu-item
+  list-style none
+  padding 0
+  margin 0
+
+  & li
+    margin-bottom 8px
+    font-weight bold
+
+  & a
+    color dark-blue
+    text-decoration none
+
+  & .menu-item-sub
+    list-style none
+    padding 0
+    margin 0
+
+    & li
+      margin-left 15px
+
+.center
+  position relative
+  float left
+  width 517px
+  margin-left auto
+  margin-right auto
+
+  & h2
+    color dark-blue
+
+  & a:link
+    color dark-blue
+
+  & a:visited
+    @extends .center a:link
+
+.journal
+  position absolute
+  width 392px
+  background #F4F4F4
+  padding-left 125px
+  min-height 150px
+  border-radius 5px
+
+  & .copyright
+    display inline-block
+    position relative
+    top -30px
+    color #A0A0A0
+
+  & .text
+    position relative
+    bottom 40px
+
+  & #journal-cover
+    position absolute
+    left 15px
+    top 10px
+
+.blocks
+  margin-top 224px
+
+  block-width = 252px
+
+  & .block
+    display inline-block
+    width block-width
+    margin-bottom 10px
+    min-height 150px
+    border-radius 4px
+    border 1px solid #EDEDEF
+    background url('../images/box_bkgrd.gif')
+
+  & .b-left
+    float left
+    margin-right 9px
+
+  & .b-right
+    float right
+
+  & .b-head
+    min-height 30px
+    background-image url('../images/box_top.gif')
+    background-repeat no-repeat
+    background-position center top
+    display inline-block
+    width block-width
+
+  & .b-head h4
+    margin-left 5px
+
+  & .b-body
+    @extends .blocks .b-head h4
+    margin-top 5px
+    margin-bottom 5px
+
+  & .link
+    display block
+    margin-bottom 10px
+
+  & .b-body .more
+    float right
+    margin-right 3px
+    @extends .blocks .link
+
+.right
+  float right
+  width 217px
+  margin-right 15px
+
+  & .search
+    background-image url('../images/search_box_bkgrd.gif')
+    background-repeat repeat-y
+    min-height 40px
+
+  & #search-box-bottom
+    position relative
+    top 0
+
+  & #search-box-top
+    position relative
+    top 0
+
+  & #search
+    margin-left 10px
+    position relative
+    top -10px
+
+  & .input-search
+    margin-left 10px
+
+    & .input[type="text"]
+      width 140px
+
+    & .submit
+      margin-left 5px
+      background dark-grey
+      color light-grey
+      border none
+
+  & .ads
+    margin-top 10px
+    background-image url('../images/adverts_box_bkgrd.gif')
+    padding-top 10px
+    height 380px
+
+    & #ads-box-top
+      position relative
+      height 15px
+      top -10px
+
+    & #ads-box-bottom
+      position relative
+      bottom 20px
+
+    & .adverts
+      position relative
+      top -15px
+      width 200px
+      margin-left 7px
+      margin-bottom 5px
+
+
+.footer
+  clear both
+  height 45px
+  padding-left 15px
+
+  & a:link
+    color dark-blue
+
+  & a:visited
+    @extends .footer a:link
+
+  & .footer-links
+    display inline-block
+    position relative
+    padding-left 2px
+    left 1px
+    top 12px
+    float left
+
+  & .footer-logo
+    float right
+    margin-right 15px
+
+  & .footer-sep
+    color lighter-blue
