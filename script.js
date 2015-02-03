@@ -27,12 +27,10 @@
     }
 
     window.onload = function () {
-
-        var elems = document.querySelectorAll('.nav');
-        var elemsLength = elems.length;
-
-        for (var i = 0; i < elemsLength; i++) {
-            navEl(elems[i]);
+        document.getElementById('menu').onclick = function(e) {
+        	if(e.target && e.target.nodeName == "LI") {
+        		toggle(document.getElementById(e.target.classList[0]));
+        	}
         }
 
         var searchBtn = document.getElementById('searchSubmit');
