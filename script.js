@@ -21,8 +21,10 @@
 
     window.onload = function () {
         document.getElementById('menu').onclick = function(e) {
-        	if(e.target && e.target.nodeName == "LI") {
-        		toggle(document.getElementById(e.target.classList[0]));
+        	var target = e && e.target || event.srcElement;
+
+        	if(target && target.nodeName == "LI") {
+        		toggle(document.getElementById(target.classList[0]));
         	}
         }
 
