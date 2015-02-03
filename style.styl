@@ -12,6 +12,8 @@ jornal-background = #F4F4F4
 search-box-background = #F5F5F5
 box-background = #FDFDFD
 
+box-border = #EDEDEF
+
 // Width
 main-width = 960px
 left-width = 172px
@@ -121,34 +123,37 @@ strong
     left 15px
     top 10px
 
+.clearfix
+  clear both
+
 .blocks
   margin-top 224px
 
   block-width = 252px
 
   & .block
-    display inline-block
-    width block-width
+    width 250px
+    margin-left auto
+    margin-right auto
     margin-bottom 10px
     min-height 150px
-    border-radius 4px
-    border 1px solid #EDEDEF
+    border-radius 5px
+    border 1px solid box-border
     background box-background
 
   & .b-left
     float left
-    margin-right 9px
 
   & .b-right
     float right
 
   & .b-head
-    min-height 30px
-    background-image url('../images/box_top.gif')
-    background-repeat no-repeat
-    background-position center top
-    display inline-block
+    height 40px
+    background search-box-background
+    /*display inline-block*/
+    position relative
     width block-width
+    top 0
 
   & .b-head h4
     margin-left 5px
