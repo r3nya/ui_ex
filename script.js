@@ -29,8 +29,9 @@
     window.onload = function () {
 
         var elems = document.querySelectorAll('.nav');
+        var elemsLength = elems.length;
 
-        for (var i = 0; i < elems.length; i++) {
+        for (var i = 0; i < elemsLength; i++) {
             navEl(elems[i]);
         }
 
