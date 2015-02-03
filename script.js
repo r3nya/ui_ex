@@ -19,14 +19,19 @@
         el.style.display = "";
     }
 
+    function navEl (el) {
+        this.child = el;
+        this.onclick = function (e) {
+            toggle(document.getElementById(e.srcElement.classList[0]));
+        }
+    }
+
     window.onload = function () {
 
         var elems = document.querySelectorAll('.nav');
 
         for (var i = 0; i < elems.length; i++) {
-            elems[i].onclick = function (e) {
-                toggle(document.getElementById(e.path[0].classList[0]));
-            };
+            navEl(elems[i]);
         }
 
         var searchBtn = document.getElementById('searchSubmit');
