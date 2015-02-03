@@ -19,13 +19,6 @@
         el.style.display = "";
     }
 
-    function navEl (el) {
-        this.child = el;
-        this.onclick = function (e) {
-            toggle(document.getElementById(e.srcElement.classList[0]));
-        }
-    }
-
     window.onload = function () {
         document.getElementById('menu').onclick = function(e) {
         	if(e.target && e.target.nodeName == "LI") {
