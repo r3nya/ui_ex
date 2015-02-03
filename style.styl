@@ -71,6 +71,7 @@ strong
   & li
     margin-bottom 8px
     font-weight bold
+    cursor pointer
 
   & a
     color dark-blue
@@ -112,7 +113,7 @@ strong
     display inline-block
     position relative
     top -30px
-    color #A0A0A0
+    color #9E9E9E
 
   & .text
     position relative
@@ -126,20 +127,34 @@ strong
 .clearfix
   clear both
 
+.box-top
+  position relative
+  background lighter-blue
+  height 5px
+  border-radius 5px 5px 0 0
+  margin-bottom 15px
+  z-index 110
+
 .blocks
   margin-top 224px
 
-  block-width = 252px
+  block-width = 250px
 
   & .block
-    width 250px
-    margin-left auto
-    margin-right auto
+    width block-width
     margin-bottom 10px
     min-height 150px
     border-radius 5px
     border 1px solid box-border
     background box-background
+    padding-top 35px
+    padding-bottom 15px
+    position relative
+    z-index 70
+
+  & .b-box-top
+    @extends .box-top
+    top -35px
 
   & .b-left
     float left
@@ -148,24 +163,27 @@ strong
     float right
 
   & .b-head
-    height 40px
+    height 35px
     background search-box-background
-    /*display inline-block*/
-    position relative
+    position absolute
+    top 5px
     width block-width
-    top 0
+    padding-bottom 10px
+    z-index 90
 
   & .b-head h4
     margin-left 5px
+    z-index 100
 
   & .b-body
     @extends .blocks .b-head h4
     margin-top 5px
     margin-bottom 5px
 
+
   & .link
     display block
-    margin-bottom 10px
+    margin-bottom 5px
 
   & .b-body .more
     float right
@@ -182,14 +200,6 @@ strong
     border 1px solid light-grey
     border-radius 5px
     padding-bottom 15px
-
-  & .search-box-top
-    position relative
-    background lighter-blue
-    height 5px
-    top 0
-    border-radius 10px 10px 0 0
-    margin-bottom 15px
 
   & #search
     margin-left 10px
@@ -221,7 +231,7 @@ strong
       background lighter-blue
       height 5px
       top -10px
-      border-radius 10px 10px 0 0
+      border-radius 5px 5px 0 0
       margin-bottom 10px
 
     & .adverts

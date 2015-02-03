@@ -70,9 +70,9 @@ html(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
                             |  2.666
 
                     .blocks
-
                         .b-left
                             .block
+                                .b-box-top
                                 .b-head
                                     h4 HEADING 1
                                 .b-body
@@ -80,13 +80,16 @@ html(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
                                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel arcu risus!
                                         | Maecenas vulputate purus sit amet enim faucibus vitae aliquet tellus laoreet.
                                         | Ut lacinia gravida dui eu tempus!
+                                        | Morbi mollis suscipit odio sit amet pellentesque. Nunc tellus odio, commodo eu semper eu, blandit id lorem.
                                     br
                                     span.more
                                         strong
                                             a(href="#") More
+
                             .block
+                                .b-box-top
                                 .b-head
-                                h4 HEADING 2
+                                    h4 HEADING 2
                                 .b-body
                                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel arcu risus!
                                         | Maecenas vulputate purus sit amet enim faucibus vitae aliquet tellus laoreet.
@@ -97,17 +100,17 @@ html(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
 
                         .b-right
                             .block
-                                .b-left
-                                    .b-head
-                                        h4 HEADING 3
-                                    .b-body
-                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel arcu risus!
-                                        | Maecenas vulputate purus sit amet enim faucibus vitae aliquet tellus laoreet.
-                                        | Ut lacinia gravida dui eu tempus!
-                                        p Morbi mollis suscipit odio sit amet pellentesque. Nunc tellus odio, commodo eu semper eu, blandit id lorem.
+                                .b-box-top
+                                .b-head
+                                    h4 HEADING 3
+                                .b-body
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel arcu risus!
+                                    | Maecenas vulputate purus sit amet enim faucibus vitae aliquet tellus laoreet.
+                                    | Ut lacinia gravida dui eu tempus!
+                                    | Morbi mollis suscipit odio sit amet pellentesque. Nunc tellus odio, commodo eu semper eu, blandit id lorem.
 
                             .block
-
+                                .b-box-top
                                 .b-head
                                     h4 HEADING 4
                                 .b-body
@@ -124,7 +127,7 @@ html(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
 
                 .right
                     .search
-                        .search-box-top
+                        .box-top
                         span#search SEARCH
                         .input-search
                             input(type='text', class='input', id='searchInput')
